@@ -1,0 +1,31 @@
+name: Deploy to Chrome Web Store
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install Dependencies
+      run: npm install
+
+    - name: Build
+      run: npm run build  # If you have a build step
+
+    - name: Zip the extension
+      run: zip -r extension.zip ./extension-folder/
+
+    - name: Deploy to Chrome Web Store
+      uses: Kibibit/deploy-chrome-extension-action@master
+      with:
+        my_client_id: ${{ secrets.CLIENT_ID }}
+        my_client_secret: ${{ secrets.CLIENT_SECRET }}
+        extension_id: ${{ secrets.APP_ID }}
+        zip_name: 'extension.zip'
