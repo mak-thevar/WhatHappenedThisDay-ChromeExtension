@@ -1,0 +1,131 @@
+/* General styles */
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f4f1de;
+    width: 400px;
+    color: #3c3c3c;
+    overflow: hidden;
+}
+
+h2 {
+    text-align: center;
+}
+
+button {
+    border: 1px solid #c7c7c7!important;
+    background-color: #ffad4e;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 32px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8x 8px;
+    
+}
+
+button:hover {
+    background-color: #f90;
+}
+
+#eventList {
+    height: 450px;
+    width: 100%;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 8px;
+}
+
+/* Slim Scrollbar */
+#eventList::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+#eventList::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+}
+
+#eventList::-webkit-scrollbar-thumb {
+    background-color: #F90;
+    background-clip: padding-box;
+    border-radius: 9999px;
+
+    background-image: -webkit-linear-gradient(45deg,
+            rgba(255, 255, 255, .2) 25%,
+            transparent 25%,
+            transparent 50%,
+            rgba(255, 255, 255, .2) 50%,
+            rgba(255, 255, 255, .2) 75%,
+            transparent 75%,
+            transparent)
+}
+
+/* Event items */
+.event-item {
+    border: 2px solid #8e8d8a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    background-color: #eae3cb;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+/* Hover animations */
+@keyframes hoverAnimation {
+    0% {
+        border-color: #8e8d8a;
+        background-color: #eae3cb;
+    }
+
+    100% {
+        border-color: #007bff;
+        background-color: #f1f1f1;
+    }
+}
+
+
+
+.event-item:hover {
+    animation: hoverAnimation 2.5s forwards;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.event-year {
+    font-style: italic;
+    color: #8e8d8a;
+    margin-left: 10px;
+}
+
+.event-description {
+    font-size: 14px;
+}
+
+
+/* Tab styles */
+.tab-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+
+}
+
+.tab {
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
