@@ -20,12 +20,14 @@ jobs:
       run: npm run build  # If you have a build step
 
     - name: Zip the extension
-      run: zip -r extension.zip ./extension-folder/
+      run: zip -r extension.zip ./
 
     - name: Deploy to Chrome Web Store
-      uses: Kibibit/deploy-chrome-extension-action@master
+      uses: Klemensas/chrome-extension-upload-action@1.4.1
       with:
-        my_client_id: ${{ secrets.CLIENT_ID }}
-        my_client_secret: ${{ secrets.CLIENT_SECRET }}
-        extension_id: ${{ secrets.APP_ID }}
-        zip_name: 'extension.zip'
+        refresh-token: '1//0g5FqTzf-TNnOCgYIARAAGBASNwF-L9IrELTHdOoH4T9OlDBKr9zOi1zsUxWZRjyudsgh3J7zFTycrzgjyV2pPM8TL61pdnowg84'
+        client-id: ${{ secrets.CLIENT_ID }}
+        client-secret: ${{ secrets.CLIENT_SECRET }}
+        file-name: './extension.zip'
+        app-id: ${{ secrets.APP_ID }}
+        publish: true
