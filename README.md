@@ -11,6 +11,8 @@
 
 🌐 Multi-source: Retrieves information from reputable sources.
 
+## 📸 Screenshot
+![Alt text](/screenshots/default.gif?raw=true "WhatHappenedThisDay")
 
 ## 🧑‍💻 Quick Install
 You can quickly add this extension to your browser from the Chrome Web Store.
