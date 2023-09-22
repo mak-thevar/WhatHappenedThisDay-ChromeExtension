@@ -15,7 +15,7 @@
 ![Alt text](/screenshots/default.gif?raw=true "WhatHappenedThisDay")
 
 ## 🧑‍💻 Quick Install
-You can quickly add this extension to your browser from the Chrome Web Store.
+You can quickly add this extension to your browser from the [`Chrome Web Store`](https://chrome.google.com/webstore/detail/cdkkcpcomfpgkoapfegeidhlcooaahpb).
 
 ## Usage
 1. Click on the Extension Icon: Located at the top-right corner of your browser.
