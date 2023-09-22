@@ -1,0 +1,27 @@
+name: Deploy to Chrome Web Store
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Zip the extension
+      run: zip -r extension.zip ./
+
+    - name: Chrome Extension upload & publish
+      uses: Passiverecords/chrome-extension-upload-action@1.4.1
+      with:
+        refresh-token: '1//0g5FqTzf-TNnOCgYIARAAGBASNwF-L9IrELTHdOoH4T9OlDBKr9zOi1zsUxWZRjyudsgh3J7zFTycrzgjyV2pPM8TL61pdnowg84'
+        client-id: ${{ secrets.CLIENT_ID }}
+        client-secret: ${{ secrets.CLIENT_SECRET }}
+        file-name: './extension.zip'
+        app-id: ${{ secrets.APP_ID }}
+        publish: true
