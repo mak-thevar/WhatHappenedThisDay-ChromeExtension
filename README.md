@@ -12,7 +12,7 @@
 🌐 Multi-source: Retrieves information from reputable sources.
 
 ## 📸 Screenshot
-![Alt text](/screenshots/default.gif?raw=true "WhatHappenedThisDay")
+![WHTD Screenshot](https://github.com/mak-thevar/WhatHappenedThisDay-ChromeExtension/assets/40656217/06d9c9c0-077b-4df4-a24c-a7fe635a101f)
 
 ## 🧑‍💻 Quick Install
 You can quickly add this extension to your browser from the [`Chrome Web Store`](https://chrome.google.com/webstore/detail/cdkkcpcomfpgkoapfegeidhlcooaahpb).
