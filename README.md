@@ -41,4 +41,6 @@ Distributed under the MIT License. See [`LICENSE`](https://github.com/mak-thevar
 
 Name - [Muthukumar Thevar](#) - mak.thevar@outlook.com
 
+Medium Post : [https://mak-thevar.medium.com/discover-history-daily-with-what-happened-this-day-chrome-extension-774cf720244f](https://mak-thevar.medium.com/discover-history-daily-with-what-happened-this-day-chrome-extension-774cf720244f)
+
 Project Link: [https://github.com/mak-thevar/WhatHappenedThisDay-ChromeExtension](https://github.com/mak-thevar/WhatHappenedThisDay-ChromeExtension)
